@@ -15,6 +15,8 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
+require_dependency "redmine_holidays"
+
 Redmine::Plugin.register :redmine_holidays_plugin do
   name 'Redmine Holidays Plugin'
   author 'Toshio Takiguchi'
@@ -26,5 +28,3 @@ Redmine::Plugin.register :redmine_holidays_plugin do
     'region' => :jp
   }, :partial => 'settings/holidays_settings'
 end
-
-Holidays.load_all
