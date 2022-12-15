@@ -1,1 +1,1 @@
-gem "holidays", "8.4.1"
+gem "holidays", ">= 8.4.1"
